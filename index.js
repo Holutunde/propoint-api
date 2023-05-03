@@ -1,11 +1,9 @@
+const morgan = require("morgan");
 const express = require("express");
 const bodyParser = require("body-parser");
 require("dotenv").config();
-
 const connectDB = require("./database/db");
 const surveyRoute = require("./routes/SurveyRoute");
-
-const morgan = require("morgan");
 
 const app = express();
 
