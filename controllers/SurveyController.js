@@ -13,6 +13,7 @@ exports.createSurvey = async (req, res) => {
     ratenetwork,
     comment,
   } = req.body;
+
   try {
     const newSurvey = new surveyModel({
       residence,
